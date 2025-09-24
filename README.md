@@ -28,7 +28,7 @@ gcc -Wall cloud_of_point_2D.c -lglfw -lGL -lX11 -lm -o cloud_of_point_2D
 
 | Action | Description |
 |--------|-------------|
-| **Clic gauche + déplacement souris** | Sélectionne un point virtuel et affiche les k points les plus proches |
+| **Clic gauche + déplacement souris** | Positionne un point virtuel et affiche les k points les plus proches |
 | **Pavé numérique +** | Augmente la valeur de k (nombre de points à considérer) |
 | **Pavé numérique -** | Diminue la valeur de k (minimum 1) |
 
@@ -40,4 +40,5 @@ Le programme est structuré autour des éléments suivants :
 - **Algorithme de recherche** des k plus proches voisins basé sur le calcul de distance euclidienne
 - **Rendu graphique** avec OpenGL pour visualiser les points, les connexions, et le cercle englobant
 - **Gestion des événements** utilisateur via les callbacks GLFW
+
 - **Animation fluide** grâce à une boucle de rendu contrôlée par le temps
